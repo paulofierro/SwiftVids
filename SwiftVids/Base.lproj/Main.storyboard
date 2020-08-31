@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17124"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SwiftVids" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pxO-Ec-XTg">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="h1D-KF-HbL">
+                                        <rect key="frame" x="0.0" y="9" width="414" height="33.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SwiftVids" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a8x-F5-yh3">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="33.5"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="h1D-KF-HbL" firstAttribute="width" secondItem="pxO-Ec-XTg" secondAttribute="width" id="H0Q-3m-LlZ"/>
+                                    <constraint firstItem="h1D-KF-HbL" firstAttribute="leading" secondItem="pxO-Ec-XTg" secondAttribute="leading" id="aCr-9j-vdu"/>
+                                    <constraint firstAttribute="trailing" secondItem="h1D-KF-HbL" secondAttribute="trailing" id="dBz-R2-Zyy"/>
+                                    <constraint firstItem="h1D-KF-HbL" firstAttribute="top" secondItem="pxO-Ec-XTg" secondAttribute="top" constant="9" id="vW1-Gb-YWk"/>
+                                    <constraint firstAttribute="bottom" secondItem="h1D-KF-HbL" secondAttribute="bottom" constant="32" id="yTA-s1-G25"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="djN-uo-EZl"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="euY-pQ-O1R"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="pxO-Ec-XTg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NGM-Uv-zvp"/>
+                            <constraint firstItem="pxO-Ec-XTg" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="fIp-FA-i2n"/>
+                            <constraint firstItem="pxO-Ec-XTg" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="gGM-Io-onx"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="pxO-Ec-XTg" secondAttribute="bottom" id="iZm-J4-tGJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="scrollView" destination="pxO-Ec-XTg" id="dxc-5x-2dX"/>
+                        <outlet property="stackView" destination="h1D-KF-HbL" id="rY6-hn-qV9"/>
+                        <outlet property="titleLabel" destination="a8x-F5-yh3" id="R5Y-Rk-DPj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="142" y="139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
